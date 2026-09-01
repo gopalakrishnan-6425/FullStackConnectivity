@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Everything except sidebar */
+
+.content-area {
+    position: relative;
+
+    width: calc(100% - 270px);
+    min-height: 100vh;
+
+    margin-left: 270px;
+
+    padding: 0;
+}
+
+/* Page content */
+
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 65px 0 0 0;
+
+    overflow-x: hidden;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .content-area {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content {
+        padding-top: 60px;
+    }
+}
