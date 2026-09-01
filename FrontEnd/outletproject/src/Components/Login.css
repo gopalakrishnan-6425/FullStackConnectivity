@@ -1,0 +1,268 @@
+
+.login-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Background Circles */
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.circle-one {
+  width: 400px;
+  height: 400px;
+  top: -150px;
+  left: -150px;
+}
+
+.circle-two {
+  width: 500px;
+  height: 500px;
+  bottom: -250px;
+  right: -150px;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+  width: 900px;
+  min-height: 550px;
+  background: white;
+  border-radius: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.login-left {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 50px;
+}
+
+.brand-icon {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 45px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-left h1 {
+  font-size: 38px;
+}
+
+.login-left p {
+  opacity: 0.9;
+}
+
+.welcome-line {
+  width: 70px;
+  height: 4px;
+  border-radius: 10px;
+  background: white;
+}
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.login-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-form h2 {
+  font-size: 32px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.custom-input {
+  border: 2px solid #eeeeee;
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.custom-input:focus-within {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.custom-input .input-group-text {
+  background: white;
+  border: none;
+  font-size: 18px;
+}
+
+.custom-input .form-control {
+  border: none;
+  box-shadow: none;
+
+  padding: 12px 10px;
+}
+
+.custom-input .form-control:focus {
+  box-shadow: none;
+}
+
+.password-btn {
+  border: none;
+  background: white;
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot-link {
+  text-decoration: none;
+  color: #6366f1;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.forgot-link:hover {
+  color: #4338ca;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+  padding: 13px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(99, 102, 241, 0.35);
+
+  color: white;
+}
+
+
+/* =========================
+   SIGNUP
+========================= */
+
+.signup-link {
+  color: #6366f1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .login-card {
+    width: 95%;
+  }
+
+  .login-left {
+    min-height: 300px;
+    padding: 35px;
+  }
+
+  .login-left h1 {
+    font-size: 30px;
+  }
+
+  .login-right {
+    padding: 40px 30px;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .login-card {
+    width: 92%;
+    border-radius: 20px;
+  }
+
+  .login-left {
+    min-height: 250px;
+    padding: 25px;
+  }
+
+  .brand-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+
+  .login-left h1 {
+    font-size: 26px;
+  }
+
+  .login-right {
+    padding: 30px 20px;
+  }
+
+  .login-form h2 {
+    font-size: 28px;
+  }
+}
