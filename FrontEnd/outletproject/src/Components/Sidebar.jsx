@@ -138,7 +138,7 @@ const Sidebar = () => {
                 </NavLink>
 
                 <NavLink to="/dashboard/about">
-                    👨‍🎓 About
+                    👨‍🎓 Students
                 </NavLink>
 
                 <NavLink to="/dashboard/contact">

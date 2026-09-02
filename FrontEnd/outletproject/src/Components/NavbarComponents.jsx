@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavbarComponents = () => {
-
+const NavbarComponents = (data) => {
+    console.log(data);
     const navigate = useNavigate();
 
     function handleClick() {
         localStorage.removeItem("isLoggedin");
+        localStorage.removeItem("setData");
         navigate("/");
     }
 
@@ -211,7 +212,7 @@ const NavbarComponents = () => {
                 <div className="navbar-right">
 
                     <span className="username">
-                        Welcome, Gopalakrishnan
+                        Welcome, 
                     </span>
 
 

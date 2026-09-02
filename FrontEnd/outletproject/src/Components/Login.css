@@ -1,348 +1,180 @@
 /* =========================================
-   LOGIN PAGE
+   LOGIN PAGE BACKGROUND
 ========================================= */
-
 .login-page {
-
-    width: 100%;
-    min-width: 100%;
-    min-height: 100vh;
-
-    position: relative;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    padding: 40px 20px;
-
-    overflow: hidden;
-
-    font-family: "Poppins", sans-serif;
-
-    background:
-        linear-gradient(
-            135deg,
-            #667eea 0%,
-            #764ba2 100%
-        );
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  position: relative;
+  overflow: hidden;
 }
 
-
-/* =========================================
-   DECORATIVE SHAPES
-========================================= */
-
+/* Decorative glowing shapes */
 .shape {
-
-    position: absolute;
-
-    border-radius: 50%;
-
-    pointer-events: none;
-
-    filter: blur(10px);
-
-    opacity: 0.45;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
 }
-
 
 .shape-1 {
-
-    width: 350px;
-    height: 350px;
-
-    top: -130px;
-    left: -100px;
-
-    background: #8b5cf6;
+  width: 320px;
+  height: 320px;
+  top: -120px;
+  left: -100px;
+  background: #06b6d4;
 }
-
 
 .shape-2 {
-
-    width: 400px;
-    height: 400px;
-
-    right: -130px;
-    bottom: -150px;
-
-    background: #2563eb;
+  width: 380px;
+  height: 380px;
+  right: -130px;
+  bottom: -150px;
+  background: #9333ea;
 }
-
 
 /* =========================================
    LOGIN BOX
 ========================================= */
-
 .login-box {
-
-    position: relative;
-
-    z-index: 10;
-
-    width: 100%;
-    max-width: 430px;
-
-    padding: 38px 36px;
-
-    border: 1px solid rgba(255, 255, 255, 0.25);
-
-    border-radius: 24px;
-
-    background: rgba(255, 255, 255, 0.15);
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.25);
-
-    text-align: center;
+  position: relative;
+  z-index: 10;
+  width:100%;
+  max-width:800px;
+  padding: 36px 34px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.4);
+  text-align: center;
 }
-
 
 /* =========================================
    LOGO
 ========================================= */
-
 .brand-logo {
-
-    display: block;
-
-    width: 76px;
-    height: 76px;
-
-    margin: 0 auto 16px;
-
-    padding: 9px;
-
-    border-radius: 50%;
-
-    object-fit: contain;
-
-    background: white;
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 16px;
+  padding: 9px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 25px rgba(14, 165, 233, 0.6);
 }
-
 
 /* =========================================
    HEADING
 ========================================= */
-
 .login-box h2 {
-
-    margin: 0 0 28px;
-
-    color: white;
-
-    font-size: 30px;
-
-    font-weight: 700;
+  margin: 0 0 24px;
+  color: #f9fafb;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(147, 51, 234, 0.6);
 }
-
 
 /* =========================================
    FORM
 ========================================= */
-
-.login-box form {
-
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-}
-
-
-/* =========================================
-   FORM GROUP
-========================================= */
-
 .form-group {
-
-    width: 100%;
-
-    margin-bottom: 19px;
-
-    text-align: left;
+  margin-bottom: 18px;
+  text-align: left;
+  width: 600px;
 }
-
-
-/* =========================================
-   LABEL
-========================================= */
 
 .form-group label {
-
-    display: block;
-
-    margin-bottom: 8px;
-
-    color: white;
-
-    font-size: 13px;
-
-    font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
 }
-
-
-/* =========================================
-   INPUT
-========================================= */
 
 .form-group input {
+  height: 250px;
 
-    display: block;
-
-    width: 100%;
-    height: 52px;
-
-    padding: 0 16px;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    border-radius: 11px;
-
-    outline: none;
-
-    color: white;
-
-    background: rgba(255, 255, 255, 0.12);
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 14px;
-
-    transition: 0.25s ease;
+  padding: 0 14px;
+  border-radius: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f9fafb;
+  font-size: 14px;
+  transition: 0.3s ease;
 }
-
 
 .form-group input::placeholder {
-
-    color: rgba(255, 255, 255, 0.7);
+  color: #94a3b8;
 }
-
 
 .form-group input:focus {
-
-    border-color: white;
-
-    background: rgba(255, 255, 255, 0.18);
-
-    box-shadow:
-        0 0 0 4px rgba(255, 255, 255, 0.1);
+  border-color: #06b6d4;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
+  background: rgba(255, 255, 255, 0.08);
 }
-
 
 /* =========================================
    LOGIN BUTTON
 ========================================= */
-
 .login-button {
-
-    display: block;
-
-    width: 100%;
-    height: 52px;
-
-    margin-top: 26px;
-
-    border: none;
-
-    border-radius: 11px;
-
-    color: #3730a3;
-
-    background: white;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 15px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    transition: 0.25s ease;
+  width: 100%;
+  height: 50px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #06b6d4, #9333ea);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-
 
 .login-button:hover {
-
-    transform: translateY(-2px);
-
-    background: #eef2ff;
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
 }
-
 
 /* =========================================
-   REGISTER
+   REGISTER LINK
 ========================================= */
-
 .login-text {
-
-    margin-top: 25px;
-    margin-bottom: 6px;
-
-    color: #e0e7ff;
-
-    font-size: 13px;
+  margin-top: 22px;
+  color: #94a3b8;
+  font-size: 13px;
 }
-
 
 .register-link {
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    text-decoration: underline;
-
-    text-underline-offset: 4px;
+  color: #06b6d4;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-
 
 .register-link:hover {
-
-    color: #ddd6fe;
+  color: #9333ea;
 }
 
-
 /* =========================================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================================= */
-
 @media (max-width: 600px) {
-
-    .login-page {
-
-        padding: 25px 15px;
-    }
-
-    .login-box {
-
-        padding: 32px 25px;
-
-        border-radius: 20px;
-    }
-
-    .brand-logo {
-
-        width: 70px;
-        height: 70px;
-    }
-
-    .login-box h2 {
-
-        font-size: 27px;
-    }
+  .login-box {
+    padding: 28px 22px;
+    border-radius: 18px;
+  }
+  .brand-logo {
+    width: 68px;
+    height: 68px;
+  }
+  .login-box h2 {
+    font-size: 25px;
+  }
 }

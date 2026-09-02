@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link , useLocation } from "react-router-dom";
+import axios from 'axios'
 import "./Login.css";
 
 const Login = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+    const [message,setMessage] = useState("")
 
     const [login, setLogin] = useState({
         email: "",
@@ -19,21 +22,18 @@ const Login = () => {
         });
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-
-        if (
-            login.email === "gopal@gmail.com" &&
-            login.password === "Gopal@06"
-        ) {
-            alert("Login successful..");
-
-            localStorage.setItem("isLoggedin", "true");
-
-            navigate("/dashboard");
-        } else {
-            alert("Invalid Credentials");
+        try{
+            const response = await axios.post("http://localhost:8086/auth/login",login)
+            console.log(response)
+            navigate("/dashboard",{state:response.data})
+            localStorage.setItem("isLoggedin","true")
         }
+        catch(error){
+           alert(error)
+        }
+        
     }
 
     return (

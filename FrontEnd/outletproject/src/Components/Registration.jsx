@@ -1,8 +1,10 @@
 import React,{useState} from "react";
+import {useNavigate} from 'react-router-dom'
 import "./Registration.css";
 
 //http://localhost:8086/auth/register
 const Registration = () => {
+    let useNavi = useNavigate()
     const [formdata,setFormdata] = useState({
         username:"",
         age:"",
@@ -31,6 +33,7 @@ const Registration = () => {
             let data=await response.json()
             console.log(data)
             alert("Registered Successfully..!")
+            useNavi("/") 
         }
         catch(error){
           console.log(error)
@@ -69,7 +72,7 @@ const Registration = () => {
         <label htmlFor="female">Female</label>
         <br />
 
-        <button type="submit">Register</button>
+        <button type="submit" >Register</button>
       </form>
     </>
   );
