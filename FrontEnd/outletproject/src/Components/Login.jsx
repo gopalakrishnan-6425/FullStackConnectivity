@@ -30,8 +30,9 @@ const Login = () => {
         login,
       );
       console.log(response);
-      navigate("/dashboard", { state: response.data });
+      navigate("/dashboard");
       localStorage.setItem("isLoggedin", "true");
+      localStorage.setItem("user",JSON.stringify(response.data));
     } catch (error) {
       alert(error);
     }

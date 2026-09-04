@@ -11,6 +11,7 @@ import Skills from "./Components/Skills";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import Settings from "./Components/Settings";
 import Registration from "./Components/Registration";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Routes,
